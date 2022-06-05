@@ -1,8 +1,9 @@
 items: 
   id: 0
-  name: "Root"
+  name: "RootItem"
   plugin: Base
   class: RootItem
+  is_builtin_item: true
   children: 
     - 
       id: 1
@@ -10,27 +11,27 @@ items:
       plugin: Body
       class: WorldItem
       data: 
-        collisionDetection: false
-        collisionDetector: AISTCollisionDetector
-        materialTableFile: "${SHARE}/default/materials.yaml"
+        collision_detection: false
+        collision_detector: AISTCollisionDetector
+        default_material_table_file: "${SHARE}/default/materials.yaml"
       children: 
         - 
           id: 2
           name: "1F"
           plugin: Base
           class: FolderItem
-          isChecked: true
+          is_checked: true
           children: 
             - 
               id: 3
               name: "Floor"
               plugin: Body
               class: BodyItem
-              isChecked: true
+              is_checked: true
               data: 
                 file: "${SHARE}/RTF-TestPlant/model/1F/Floor.body"
-                format: CHOREONOID-BODY
                 currentBaseLink: "1F_SURFACE"
+                format: CHOREONOID-BODY
                 rootPosition: [ 0, 0, 0 ]
                 rootAttitude: [ 
                   1, 0, 0, 
@@ -53,11 +54,11 @@ items:
               name: "Columns"
               plugin: Body
               class: BodyItem
-              isChecked: true
+              is_checked: true
               data: 
                 file: "${SHARE}/RTF-TestPlant/model/1F/Columns.body"
-                format: CHOREONOID-BODY
                 currentBaseLink: "COLUMN1"
+                format: CHOREONOID-BODY
                 rootPosition: [ 0, 0, 0 ]
                 rootAttitude: [ 
                   1, 0, 0, 
@@ -80,11 +81,11 @@ items:
               name: "Catwalk"
               plugin: Body
               class: BodyItem
-              isChecked: true
+              is_checked: true
               data: 
                 file: "${SHARE}/RTF-TestPlant/model/1F/Catwalk.body"
-                format: CHOREONOID-BODY
                 currentBaseLink: "BASE"
+                format: CHOREONOID-BODY
                 rootPosition: [ 0, 0, 0 ]
                 rootAttitude: [ 
                   1, 0, 0, 
@@ -107,11 +108,11 @@ items:
               name: "Handrails"
               plugin: Body
               class: BodyItem
-              isChecked: true
+              is_checked: true
               data: 
                 file: "${SHARE}/RTF-TestPlant/model/1F/Handrails.body"
-                format: CHOREONOID-BODY
                 currentBaseLink: "BASE"
+                format: CHOREONOID-BODY
                 rootPosition: [ 0, 0, 0 ]
                 rootAttitude: [ 
                   1, 0, 0, 
@@ -134,11 +135,11 @@ items:
               name: "Ramp.body"
               plugin: Body
               class: BodyItem
-              isChecked: true
+              is_checked: true
               data: 
                 file: "${SHARE}/RTF-TestPlant/model/1F/Ramp.body"
-                format: CHOREONOID-BODY
                 currentBaseLink: "BASE"
+                format: CHOREONOID-BODY
                 rootPosition: [ 0, 0, -0.015 ]
                 rootAttitude: [ 
                   1, 0, 0, 
@@ -161,11 +162,11 @@ items:
               name: "Platform"
               plugin: Body
               class: BodyItem
-              isChecked: true
+              is_checked: true
               data: 
                 file: "${SHARE}/RTF-TestPlant/model/1F/Platform.body"
-                format: CHOREONOID-BODY
                 currentBaseLink: "BASE"
+                format: CHOREONOID-BODY
                 rootPosition: [ 0, 0, 0 ]
                 rootAttitude: [ 
                   1, 0, 0, 
@@ -188,11 +189,11 @@ items:
               name: "SteelPlae"
               plugin: Body
               class: BodyItem
-              isChecked: true
+              is_checked: true
               data: 
                 file: "${SHARE}/RTF-TestPlant/model/1F/SteelPlate.body"
-                format: CHOREONOID-BODY
                 currentBaseLink: "BASE"
+                format: CHOREONOID-BODY
                 rootPosition: [ 0, 0, 0 ]
                 rootAttitude: [ 
                   1, 0, 0, 
@@ -215,11 +216,11 @@ items:
               name: "Grating"
               plugin: Body
               class: BodyItem
-              isChecked: true
+              is_checked: true
               data: 
                 file: "${SHARE}/RTF-TestPlant/model/1F/Grating.body"
-                format: CHOREONOID-BODY
                 currentBaseLink: "BASE"
+                format: CHOREONOID-BODY
                 rootPosition: [ 0, 0, 0 ]
                 rootAttitude: [ 
                   1, 0, 0, 
@@ -242,11 +243,11 @@ items:
               name: "PipeL"
               plugin: Body
               class: BodyItem
-              isChecked: true
+              is_checked: true
               data: 
                 file: "${SHARE}/RTF-TestPlant/model/1F/PipeL.body"
-                format: CHOREONOID-BODY
                 currentBaseLink: "BASE"
+                format: CHOREONOID-BODY
                 rootPosition: [ 0, 0, 0 ]
                 rootAttitude: [ 
                   1, 0, 0, 
@@ -269,11 +270,11 @@ items:
               name: "ButtonBox"
               plugin: Body
               class: BodyItem
-              isChecked: true
+              is_checked: true
               data: 
                 file: "${SHARE}/RTF-TestPlant/model/1F/ButtonBox.body"
-                format: CHOREONOID-BODY
                 currentBaseLink: "BASE"
+                format: CHOREONOID-BODY
                 rootPosition: [ 0, 0, 0 ]
                 rootAttitude: [ 
                   1, 0, 0, 
@@ -296,11 +297,11 @@ items:
               name: "SwitchBoard"
               plugin: Body
               class: BodyItem
-              isChecked: true
+              is_checked: true
               data: 
                 file: "${SHARE}/RTF-TestPlant/model/1F/SwitchBoard.body"
-                format: CHOREONOID-BODY
                 currentBaseLink: "BASE"
+                format: CHOREONOID-BODY
                 rootPosition: [ 0, 0, 0 ]
                 rootAttitude: [ 
                   1, 0, 0, 
@@ -323,11 +324,11 @@ items:
               name: "TankA"
               plugin: Body
               class: BodyItem
-              isChecked: true
+              is_checked: true
               data: 
                 file: "${SHARE}/RTF-TestPlant/model/1F/TankA.body"
-                format: CHOREONOID-BODY
                 currentBaseLink: "BASE"
+                format: CHOREONOID-BODY
                 rootPosition: [ 0, 0, 0 ]
                 rootAttitude: [ 
                   1, 0, 0, 
@@ -350,11 +351,11 @@ items:
               name: "TankPlatformStage"
               plugin: Body
               class: BodyItem
-              isChecked: true
+              is_checked: true
               data: 
                 file: "${SHARE}/RTF-TestPlant/model/1F/TankPlatformStage.body"
-                format: CHOREONOID-BODY
                 currentBaseLink: "STAGE"
+                format: CHOREONOID-BODY
                 rootPosition: [ 0, 0, 0 ]
                 rootAttitude: [ 
                   1, 0, 0, 
@@ -377,11 +378,11 @@ items:
               name: "TankPlatformStageHandrail"
               plugin: Body
               class: BodyItem
-              isChecked: true
+              is_checked: true
               data: 
                 file: "${SHARE}/RTF-TestPlant/model/1F/TankPlatformStageHandrails.body"
-                format: CHOREONOID-BODY
                 currentBaseLink: "BASE"
+                format: CHOREONOID-BODY
                 rootPosition: [ 0, 0, 0 ]
                 rootAttitude: [ 
                   1, 0, 0, 
@@ -404,11 +405,11 @@ items:
               name: "TankPlatformStairs1"
               plugin: Body
               class: BodyItem
-              isChecked: true
+              is_checked: true
               data: 
                 file: "${SHARE}/RTF-TestPlant/model/1F/TankPlatformStairs.body"
-                format: CHOREONOID-BODY
                 currentBaseLink: "STAIRS"
+                format: CHOREONOID-BODY
                 rootPosition: [ 4.06, 4.7455, 0 ]
                 rootAttitude: [ 
                   1, 0, 0, 
@@ -431,11 +432,11 @@ items:
               name: "TankPlatformStairs1Handrails"
               plugin: Body
               class: BodyItem
-              isChecked: true
+              is_checked: true
               data: 
                 file: "${SHARE}/RTF-TestPlant/model/1F/TankPlatformStairsHandrails.body"
-                format: CHOREONOID-BODY
                 currentBaseLink: "BASE"
+                format: CHOREONOID-BODY
                 rootPosition: [ 4.06, 4.7455, 0 ]
                 rootAttitude: [ 
                   1, 0, 0, 
@@ -458,11 +459,11 @@ items:
               name: "TankPlatformStairs2"
               plugin: Body
               class: BodyItem
-              isChecked: true
+              is_checked: true
               data: 
                 file: "${SHARE}/RTF-TestPlant/model/1F/TankPlatformStairs.body"
-                format: CHOREONOID-BODY
                 currentBaseLink: "STAIRS"
+                format: CHOREONOID-BODY
                 rootPosition: [ 7.061, 7.03, 0 ]
                 rootAttitude: [ 
                   -1, -1.2246468e-16, 0, 
@@ -485,11 +486,11 @@ items:
               name: "TankPlatformStairs2Handrails"
               plugin: Body
               class: BodyItem
-              isChecked: true
+              is_checked: true
               data: 
                 file: "${SHARE}/RTF-TestPlant/model/1F/TankPlatformStairsHandrails.body"
-                format: CHOREONOID-BODY
                 currentBaseLink: "BASE"
+                format: CHOREONOID-BODY
                 rootPosition: [ 7.061, 7.03, 0 ]
                 rootAttitude: [ 
                   -1, -1.2246468e-16, 0, 
@@ -512,11 +513,11 @@ items:
               name: "PipeG"
               plugin: Body
               class: BodyItem
-              isChecked: true
+              is_checked: true
               data: 
                 file: "${SHARE}/RTF-TestPlant/model/1F/PipeG.body"
-                format: CHOREONOID-BODY
                 currentBaseLink: "BASE"
+                format: CHOREONOID-BODY
                 rootPosition: [ 0, 0, 0 ]
                 rootAttitude: [ 
                   1, 0, 0, 
@@ -539,11 +540,11 @@ items:
               name: "PipeB"
               plugin: Body
               class: BodyItem
-              isChecked: true
+              is_checked: true
               data: 
                 file: "${SHARE}/RTF-TestPlant/model/1F/PipeB.body"
-                format: CHOREONOID-BODY
                 currentBaseLink: "BASE"
+                format: CHOREONOID-BODY
                 rootPosition: [ 0, 0, 0 ]
                 rootAttitude: [ 
                   1, 0, 0, 
@@ -566,11 +567,11 @@ items:
               name: "FireHydrant"
               plugin: Body
               class: BodyItem
-              isChecked: true
+              is_checked: true
               data: 
                 file: "${SHARE}/RTF-TestPlant/model/1F/FireHydrant.body"
-                format: CHOREONOID-BODY
                 currentBaseLink: "BASE"
+                format: CHOREONOID-BODY
                 rootPosition: [ 0, 0, 0 ]
                 rootAttitude: [ 
                   1, 0, 0, 
@@ -593,11 +594,11 @@ items:
               name: "TankB"
               plugin: Body
               class: BodyItem
-              isChecked: true
+              is_checked: true
               data: 
                 file: "${SHARE}/RTF-TestPlant/model/1F/TankB.body"
-                format: CHOREONOID-BODY
                 currentBaseLink: "BASE"
+                format: CHOREONOID-BODY
                 rootPosition: [ 0.03, 0, 0 ]
                 rootAttitude: [ 
                   1, 0, 0, 
@@ -620,11 +621,11 @@ items:
               name: "Pump"
               plugin: Body
               class: BodyItem
-              isChecked: true
+              is_checked: true
               data: 
                 file: "${SHARE}/RTF-TestPlant/model/1F/Pump.body"
-                format: CHOREONOID-BODY
                 currentBaseLink: "BASE"
+                format: CHOREONOID-BODY
                 rootPosition: [ 0, 0, 0 ]
                 rootAttitude: [ 
                   1, 0, 0, 
@@ -647,11 +648,11 @@ items:
               name: "PipeP1"
               plugin: Body
               class: BodyItem
-              isChecked: true
+              is_checked: true
               data: 
                 file: "${SHARE}/RTF-TestPlant/model/1F/PipeP1.body"
-                format: CHOREONOID-BODY
                 currentBaseLink: "BASE"
+                format: CHOREONOID-BODY
                 rootPosition: [ 0.4, 2.69, 0 ]
                 rootAttitude: [ 
                   1, 0, 0, 
@@ -674,11 +675,11 @@ items:
               name: "PipeP2"
               plugin: Body
               class: BodyItem
-              isChecked: true
+              is_checked: true
               data: 
                 file: "${SHARE}/RTF-TestPlant/model/1F/PipeP2.body"
-                format: CHOREONOID-BODY
                 currentBaseLink: "BASE"
+                format: CHOREONOID-BODY
                 rootPosition: [ 0.41, 1.7, -0.16 ]
                 rootAttitude: [ 
                   1, 0, 0, 
@@ -701,11 +702,11 @@ items:
               name: "PipePS"
               plugin: Body
               class: BodyItem
-              isChecked: true
+              is_checked: true
               data: 
                 file: "${SHARE}/RTF-TestPlant/model/1F/PipePS.body"
-                format: CHOREONOID-BODY
                 currentBaseLink: "BASE"
+                format: CHOREONOID-BODY
                 rootPosition: [ 0, 0.04, 0 ]
                 rootAttitude: [ 
                   1, 0, 0, 
@@ -728,11 +729,11 @@ items:
               name: "PipeY"
               plugin: Body
               class: BodyItem
-              isChecked: true
+              is_checked: true
               data: 
                 file: "${SHARE}/RTF-TestPlant/model/1F/PipeY.body"
-                format: CHOREONOID-BODY
                 currentBaseLink: "BASE"
+                format: CHOREONOID-BODY
                 rootPosition: [ 0, 0, 0 ]
                 rootAttitude: [ 
                   1, 0, 0, 
@@ -755,11 +756,11 @@ items:
               name: "PipeBG1"
               plugin: Body
               class: BodyItem
-              isChecked: true
+              is_checked: true
               data: 
                 file: "${SHARE}/RTF-TestPlant/model/1F/PipeBG1.body"
-                format: CHOREONOID-BODY
                 currentBaseLink: "BASE"
+                format: CHOREONOID-BODY
                 rootPosition: [ 0, 0, 0 ]
                 rootAttitude: [ 
                   1, 0, 0, 
@@ -782,11 +783,11 @@ items:
               name: "PipeBG2"
               plugin: Body
               class: BodyItem
-              isChecked: true
+              is_checked: true
               data: 
                 file: "${SHARE}/RTF-TestPlant/model/1F/PipeBG2.body"
-                format: CHOREONOID-BODY
                 currentBaseLink: "BASE"
+                format: CHOREONOID-BODY
                 rootPosition: [ 8.23, 10.445, 0 ]
                 rootAttitude: [ 
                   1, 0, 0, 
@@ -811,11 +812,11 @@ items:
               name: "PipeBG3"
               plugin: Body
               class: BodyItem
-              isChecked: true
+              is_checked: true
               data: 
                 file: "${SHARE}/RTF-TestPlant/model/1F/PipeBG3.body"
-                format: CHOREONOID-BODY
                 currentBaseLink: "BASE"
+                format: CHOREONOID-BODY
                 rootPosition: [ 0, 0, 0 ]
                 rootAttitude: [ 
                   1, 0, 0, 
@@ -838,11 +839,11 @@ items:
           name: "2F"
           plugin: Body
           class: BodyItem
-          isChecked: true
+          is_checked: true
           data: 
             file: "${SHARE}/RTF-TestPlant/model/2F/2F.body"
-            format: CHOREONOID-BODY
             currentBaseLink: "Floor"
+            format: CHOREONOID-BODY
             rootPosition: [ 0, 0, 0 ]
             rootAttitude: [ 
               1, 0, 0, 
@@ -865,11 +866,11 @@ items:
           name: "3F"
           plugin: Body
           class: BodyItem
-          isChecked: true
+          is_checked: true
           data: 
             file: "${SHARE}/RTF-TestPlant/model/3F/3F.body"
-            format: CHOREONOID-BODY
             currentBaseLink: "Floor"
+            format: CHOREONOID-BODY
             rootPosition: [ 0, 0, 0 ]
             rootAttitude: [ 
               1, 0, 0, 
@@ -892,11 +893,11 @@ items:
           name: "4F"
           plugin: Body
           class: BodyItem
-          isChecked: true
+          is_checked: true
           data: 
             file: "${SHARE}/RTF-TestPlant/model/4F/4F.body"
-            format: CHOREONOID-BODY
             currentBaseLink: "Floor"
+            format: CHOREONOID-BODY
             rootPosition: [ 0, 0, 0 ]
             rootAttitude: [ 
               1, 0, 0, 
@@ -919,11 +920,11 @@ items:
           name: "Chimney"
           plugin: Body
           class: BodyItem
-          isChecked: true
+          is_checked: true
           data: 
             file: "${SHARE}/RTF-TestPlant/model/Chimney/Chimney.body"
-            format: CHOREONOID-BODY
             currentBaseLink: "Floor"
+            format: CHOREONOID-BODY
             rootPosition: [ 0, 0, 0 ]
             rootAttitude: [ 
               1, 0, 0, 
@@ -946,23 +947,25 @@ items:
           name: "AISTSimulator"
           plugin: Body
           class: AISTSimulatorItem
-          isChecked: true
+          is_checked: true
           data: 
             timeStep: 0.001
             realtimeSync: true
             recording: "full"
             timeRangeMode: "Unlimited"
             timeLength: 180
+            active_control_time_range_mode: false
             allLinkPositionOutputMode: false
             deviceStateOutput: true
             controllerThreads: true
             recordCollisionData: false
             controllerOptions: ""
+            scene_view_edit_mode_blocking: false
             dynamicsMode: "Forward dynamics"
             integrationMode: "Runge Kutta"
             gravity: [ 0, 0, -9.80665 ]
-            staticFriction: 1
-            dynamicFriction: 1
+            min_friction_coefficient: 0
+            max_friction_coefficient: 100
             cullingThresh: 0.005
             contactCullingDepth: 0.05
             errorCriterion: 0.001
@@ -972,85 +975,62 @@ items:
             kinematicWalking: false
             2Dmode: false
             oldAccelSensorMode: false
-          children: 
-            - 
-              id: 38
-              name: "GLVisionSimulator"
-              plugin: Body
-              class: GLVisionSimulatorItem
-              data: 
-                enabled: true
-                maxFrameRate: 1000
-                maxLatency: 1
-                recordVisionData: false
-                threadMode: Sensor
-                bestEffort: false
-                allSceneObjects: false
-                rangeSensorPrecisionRatio: 2
-                depthError: 0
-                enableHeadLight: true
-                enableAdditionalLights: true
-                antiAliasing: false
         - 
-          id: 39
+          id: 38
           name: "WorldROS"
           plugin: ROS
           class: WorldROSItem
-          isChecked: true
+          is_checked: true
           data: 
             max_clock_publishing_rate: 100
         - 
-          id: 40
-          name: "Tank"
+          id: 39
+          name: "tank"
           plugin: Body
           class: BodyItem
-          isChecked: true
-          data:
-            file: "${SHARE}/cnoid_tank_bringup/model/Tank.body"
-            format: CHOREONOID-BODY
-            rootPosition: [ 14, 8, 0.106 ]
+          is_checked: true
+          data: 
+            file: "../../../cnoid_tank_description/urdf/cnoid_tank.urdf.xacro"
+            format: URDF
+            rootPosition: [ 14, 8, 0 ]
             rootAttitude: [ 
-              -1, 0, 0, 
-              0, -1, 0, 
+              1, 0, 0, 
+              0, 1, 0, 
               0, 0, 1 ]
-            jointDisplacements: [ 0, 0 ]
-            jointPositions: [ 0, 0 ]
-            initialRootPosition: [ 14, 8, 0.106 ]
+            jointDisplacements: [ 3.9808e-08, -59.9485 ]
+            initialJointDisplacements: [ -7.00128e-10, -2.10885e-09 ]
+            jointPositions: [ 6.94781e-10, -1.0463 ]
+            initialRootPosition: [ 14, 8, 0 ]
             initialRootAttitude: [ 
-              -1, 0, 0, 
-              0, -1, 0, 
+              1, 0, 0, 
+              0, 1, 0, 
               0, 0, 1 ]
-            initialJointPositions: [ 0, 0 ]
+            initialJointPositions: [ -1.22195e-11, -3.68064e-11 ]
             staticModel: false
             collisionDetection: true
-            selfCollisionDetection: true
+            selfCollisionDetection: false
             location_editable: true
             scene_sensitive: true
             zmp: [ 0, 0, 0 ]
           children: 
             - 
-              id: 41
+              id: 40
               name: "BodyROS"
               plugin: ROS
               class: BodyROSItem
-              isChecked: true
+              is_checked: true
               data: 
                 body_ros_version: 0
                 joint_state_update_rate: 100
             - 
-              id: 42
+              id: 41
               name: "ROSControl"
-              plugin: Body
-              class: SimpleControllerItem
-              isChecked: true
+              plugin: ROS
+              class: ROSControlItem
+              is_selected: true
+              is_checked: true
               data: 
-                isNoDelayMode: false
-                controllerOptions: ""
-                controller: "choreonoid_ros_control"
-                baseDirectory: "Controller directory"
-                reloading: false
-                exportSymbols: false
-                isOldTargetVariableMode: false
+                name_space: tank
 views: 
   - 
     id: 0
@@ -1063,140 +1043,124 @@ views:
     class: ItemTreeView
     mounted: true
     state: 
-      expanded: [ 1, 13, 26, 29, 31, 37, 40 ]
+      expanded: [ 1, 13, 26, 29, 31, 37, 39 ]
   - 
     id: 2
+    plugin: Base
+    class: LocationView
+    state: 
+      show_rpy: true
+      unique_rpy: false
+      show_quaternion: false
+      show_rotation_matrix: false
+      coordinate: parent
+  - 
+    id: 3
     plugin: Base
     class: MessageView
     mounted: true
   - 
-    id: 3
+    id: 4
     plugin: Base
     class: SceneView
     mounted: true
     state: 
       editMode: false
-      viewpointControlMode: thirdPerson
+      viewpointOperationMode: thirdPerson
+      visible_polygon_elements: [ face ]
+      highlighting: false
       collisionLines: false
-      polygonMode: fill
-      restrictCameraRoll: true
-      verticalAxis: Z
-      lightingMode: full
-      cullingMode: enabled
-      defaultHeadLight: true
-      defaultHeadLightIntensity: 0.75
-      headLightLightingFromBack: false
-      worldLight: true
-      worldLightIntensity: 0.5
-      worldLightAmbient: 0.3
-      additionalLights: true
-      fog: true
-      floorGrid: false
-      floorGridSpan: 10
-      floorGridInterval: 0.5
-      xzGridSpan: 10
-      xzGridInterval: 0.5
-      xzGrid: false
-      yzGridSpan: 10
-      yzGridInterval: 0.5
-      texture: true
-      lineWidth: 1
-      pointSize: 1
-      normalVisualization: false
-      normalLength: 0.01
-      lightweightViewChange: false
-      coordinateAxes: true
-      fpsTestIteration: 1
-      upsideDown: false
       cameras: 
         - 
           camera: [ System, Perspective ]
           isCurrent: true
-          fieldOfView: 0.698132
-          near: 0.01
-          far: 100
-          eye: [ 18.5914, 11.5066, 1.4593 ]
-          direction: [ -0.83916, -0.520027, -0.159318 ]
-          up: [ -0.135423, -0.0839216, 0.987227 ]
+          eye: [ 12.6407, 10.5431, 1.3584 ]
+          direction: [ 0.503919, -0.833122, -0.227977 ]
+          up: [ 0.117989, -0.195069, 0.973667 ]
         - 
           camera: [ System, Orthographic ]
           orthoHeight: 12.1306
-          near: 0.01
-          far: 100
+      lightingMode: normal
+      cullingMode: enabled
+      worldLight: true
+      worldLightIntensity: 0.5
+      worldLightAmbient: 0.3
+      defaultHeadLight: true
+      defaultHeadLightIntensity: 0.75
+      world_light_shadow: true
       backgroundColor: [ 0.1, 0.1, 0.3 ]
-      gridColor: [ 0.9, 0.9, 0.9, 1 ]
-      xzgridColor: [ 0.9, 0.9, 0.9, 1 ]
-      yzgridColor: [ 0.9, 0.9, 0.9, 1 ]
-      isDedicatedItemCheckEnabled: false
+      lineWidth: 1
+      pointSize: 1
+      field_of_view: 40
+      clip_distances: [ 0.01, 100 ]
+      floorGrid: false
+      floorGridSpan: 10
+      floorGridInterval: 0.5
+      xzGrid: false
+      xzGridSpan: 10
+      xzGridInterval: 0.5
+      yzGrid: false
+      yzGridSpan: 10
+      yzGridInterval: 0.5
+      xy_grid_color: [ 0.9, 0.9, 0.9 ]
+      xz_grid_color: [ 0.9, 0.9, 0.9 ]
+      yz_grid_color: [ 0.9, 0.9, 0.9 ]
   - 
-    id: 4
+    id: 5
     name: "Camera Scene"
     plugin: Base
     class: SceneView
     mounted: true
     state: 
       editMode: false
-      viewpointControlMode: thirdPerson
+      viewpointOperationMode: thirdPerson
+      visible_polygon_elements: [ face ]
+      highlighting: false
       collisionLines: false
-      polygonMode: fill
-      restrictCameraRoll: true
-      verticalAxis: Z
-      lightingMode: full
-      cullingMode: enabled
-      defaultHeadLight: true
-      defaultHeadLightIntensity: 0.75
-      headLightLightingFromBack: false
-      worldLight: true
-      worldLightIntensity: 0.5
-      worldLightAmbient: 0.3
-      additionalLights: true
-      fog: true
-      floorGrid: true
-      floorGridSpan: 10
-      floorGridInterval: 0.5
-      xzGridSpan: 10
-      xzGridInterval: 0.5
-      xzGrid: false
-      yzGridSpan: 10
-      yzGridInterval: 0.5
-      texture: true
-      lineWidth: 1
-      pointSize: 1
-      normalVisualization: false
-      normalLength: 0.01
-      lightweightViewChange: false
-      coordinateAxes: true
-      fpsTestIteration: 1
-      upsideDown: false
       cameras: 
         - 
           camera: [ System, Perspective ]
           isCurrent: true
-          fieldOfView: 0.698132
-          near: 0.01
-          far: 100
           eye: [ -2.00307, -1.42061, 0.458768 ]
           direction: [ 0.714656, 0.695834, -0.0712805 ]
           up: [ 0.051071, 0.0497259, 0.997456 ]
         - 
           camera: [ System, Orthographic ]
           orthoHeight: 20
-          near: 0.01
-          far: 100
+      lightingMode: normal
+      cullingMode: enabled
+      worldLight: true
+      worldLightIntensity: 0.5
+      worldLightAmbient: 0.3
+      defaultHeadLight: true
+      defaultHeadLightIntensity: 0.75
+      world_light_shadow: false
       backgroundColor: [ 0.1, 0.1, 0.3 ]
-      gridColor: [ 0.9, 0.9, 0.9, 1 ]
-      xzgridColor: [ 0.9, 0.9, 0.9, 1 ]
-      yzgridColor: [ 0.9, 0.9, 0.9, 1 ]
-      isDedicatedItemCheckEnabled: false
+      lineWidth: 1
+      pointSize: 1
+      field_of_view: 40
+      clip_distances: [ 0.01, 100 ]
+      floorGrid: true
+      floorGridSpan: 10
+      floorGridInterval: 0.5
+      xzGrid: false
+      xzGridSpan: 10
+      xzGridInterval: 0.5
+      yzGrid: false
+      yzGridSpan: 10
+      yzGridInterval: 0.5
+      xy_grid_color: [ 0.9, 0.9, 0.9 ]
+      xz_grid_color: [ 0.9, 0.9, 0.9 ]
+      yz_grid_color: [ 0.9, 0.9, 0.9 ]
   - 
-    id: 5
+    id: 6
     plugin: Body
     class: BodyLinkView
     mounted: true
     state: 
       showRotationMatrix: false
   - 
-    id: 6
+    id: 7
     plugin: Body
     class: JointDisplacementView
     mounted: true
@@ -1208,67 +1172,49 @@ views:
       show_sliders: true
       show_dials: false
       show_phases: true
-  - 
-    id: 7
-    plugin: Body
-    class: LinkSelectionView
-    mounted: true
-    state: 
-      listingMode: "Link Tree"
-      currentBodyItem: 3
-      bodyItems: 
-        - 
-          id: 3
-          selectedLinks: [ 0 ]
-        - 
-          id: 5
-          selectedLinks: [ 4 ]
-        - 
-          id: 6
-          selectedLinks: [ 1 ]
-        - 
-          id: 11
-          selectedLinks: [ 1 ]
-        - 
-          id: 25
-          selectedLinks: [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18 ]
-        - 
-          id: 22
-          selectedLinks: [ 0, 1, 2, 3, 4, 5, 6 ]
-        - 
-          id: 26
-          selectedLinks: [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12 ]
-        - 
-          id: 28
-          selectedLinks: [ 0 ]
-        - 
-          id: 27
-          selectedLinks: [ 0 ]
-        - 
-          id: 29
-          selectedLinks: [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 ]
-        - 
-          id: 32
-          selectedLinks: [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ]
-        - 
-          id: 40
-          selectedLinks: [ 0 ]
+      limit_ranges: false
   - 
     id: 8
+    plugin: Body
+    class: LinkDeviceListView
+    mounted: true
+    state: 
+      element_type: link
+      listing_mode: list
+  - 
+    id: 9
+    plugin: Body
+    class: LinkPositionView
+    state: 
+      coordinate_mode: world
+      preferred_coordinate_mode: base
+      show_rpy: true
+      unique_rpy: false
+      show_quaternion: false
+      show_rotation_matrix: false
+      target_link_type: ik_link
+  - 
+    id: 10
+    plugin: Body
+    class: LinkPropertyView
+  - 
+    id: 11
     plugin: Python
     class: PythonConsoleView
     mounted: true
 toolbars: 
   "TimeBar": 
-    minTime: 0
-    maxTime: 30
-    frameRate: 100
-    playbackFrameRate: 50
-    idleLoopDrivenMode: false
-    currentTime: 0
-    speedScale: 1
-    syncToOngoingUpdates: true
-    autoExpansion: true
+    current_time: 189.89
+    min_time: 0
+    max_time: 189.89
+    frame_rate: 100
+    playback_frame_rate: 50
+    idle_loop_driven_mode: false
+    playback_speed_ratio: 1
+    sync_to_ongoing_updates: true
+    auto_expansion: true
+  "LeggedBodyBar": 
+    stanceWidth: 0.15
   "KinematicsBar": 
     forward_kinematics: true
     inverse_kinematics: true
@@ -1279,226 +1225,187 @@ toolbars:
     snapDistance: 0.025
     penetrationBlockDepth: 0.0005
     lazyCollisionDetectionMode: true
-  "BodyBar": 
-    current: 40
-  "LeggedBodyBar": 
-    stanceWidth: 0.15
-  "BodyMotionGenerationBar": 
-    autoGenerationForNewBody: true
-    balancer: false
-    autoGeneration: false
-    timeScaleRatio: 1
-    preInitialDuration: 1
-    postFinalDuration: 1
-    onlyTimeBarRange: false
-    makeNewBodyItem: true
-    stealthyStepMode: true
-    stealthyHeightRatioThresh: 2
-    flatLiftingHeight: 0.005
-    flatLandingHeight: 0.005
-    impactReductionHeight: 0.005
-    impactReductionTime: 0.04
-    autoZmp: true
-    minZmpTransitionTime: 0.1
-    zmpCenteringTimeThresh: 0.03
-    zmpTimeMarginBeforeLiftingSpin: 0
-    zmpMaxDistanceFromCenter: 0.02
-    allLinkPositions: false
-    lipSyncMix: false
-    timeToStartBalancer: 0
-    balancerIterations: 2
-    plainBalancerMode: false
-    boundaryConditionType: position
-    boundarySmootherType: quintic
-    boundarySmootherTime: 0.5
-    boundaryCmAdjustment: false
-    boundaryCmAdjustmentTime: 1
-    waistHeightRelaxation: false
-    gravity: 9.8
-    dynamicsTimeRatio: 1
 Body: 
-  "BodyMotionEngine": 
-    updateJointVelocities: false
   "BodySelectionManager": 
-    currentBodyItem: 3
-    currentLink: "1F_SURFACE"
+    current_body_item: 39
+    current_link: "base_footprint"
   "EditableSceneBody": 
     editableSceneBodies: 
       - 
         bodyItem: 3
-        showCenterOfMass: false
-        showPpcom: false
-        showZmp: false
+        show_cm: false
+        show_cm_projection: false
+        show_zmp: false
       - 
         bodyItem: 4
-        showCenterOfMass: false
-        showPpcom: false
-        showZmp: false
+        show_cm: false
+        show_cm_projection: false
+        show_zmp: false
       - 
         bodyItem: 5
-        showCenterOfMass: false
-        showPpcom: false
-        showZmp: false
+        show_cm: false
+        show_cm_projection: false
+        show_zmp: false
       - 
         bodyItem: 6
-        showCenterOfMass: false
-        showPpcom: false
-        showZmp: false
+        show_cm: false
+        show_cm_projection: false
+        show_zmp: false
       - 
         bodyItem: 7
-        showCenterOfMass: false
-        showPpcom: false
-        showZmp: false
+        show_cm: false
+        show_cm_projection: false
+        show_zmp: false
       - 
         bodyItem: 8
-        showCenterOfMass: false
-        showPpcom: false
-        showZmp: false
+        show_cm: false
+        show_cm_projection: false
+        show_zmp: false
       - 
         bodyItem: 9
-        showCenterOfMass: false
-        showPpcom: false
-        showZmp: false
+        show_cm: false
+        show_cm_projection: false
+        show_zmp: false
       - 
         bodyItem: 10
-        showCenterOfMass: false
-        showPpcom: false
-        showZmp: false
+        show_cm: false
+        show_cm_projection: false
+        show_zmp: false
       - 
         bodyItem: 11
-        showCenterOfMass: false
-        showPpcom: false
-        showZmp: false
+        show_cm: false
+        show_cm_projection: false
+        show_zmp: false
       - 
         bodyItem: 12
-        showCenterOfMass: false
-        showPpcom: false
-        showZmp: false
+        show_cm: false
+        show_cm_projection: false
+        show_zmp: false
       - 
         bodyItem: 13
-        showCenterOfMass: false
-        showPpcom: false
-        showZmp: false
+        show_cm: false
+        show_cm_projection: false
+        show_zmp: false
       - 
         bodyItem: 14
-        showCenterOfMass: false
-        showPpcom: false
-        showZmp: false
+        show_cm: false
+        show_cm_projection: false
+        show_zmp: false
       - 
         bodyItem: 15
-        showCenterOfMass: false
-        showPpcom: false
-        showZmp: false
+        show_cm: false
+        show_cm_projection: false
+        show_zmp: false
       - 
         bodyItem: 16
-        showCenterOfMass: false
-        showPpcom: false
-        showZmp: false
+        show_cm: false
+        show_cm_projection: false
+        show_zmp: false
       - 
         bodyItem: 17
-        showCenterOfMass: false
-        showPpcom: false
-        showZmp: false
+        show_cm: false
+        show_cm_projection: false
+        show_zmp: false
       - 
         bodyItem: 18
-        showCenterOfMass: false
-        showPpcom: false
-        showZmp: false
+        show_cm: false
+        show_cm_projection: false
+        show_zmp: false
       - 
         bodyItem: 19
-        showCenterOfMass: false
-        showPpcom: false
-        showZmp: false
+        show_cm: false
+        show_cm_projection: false
+        show_zmp: false
       - 
         bodyItem: 20
-        showCenterOfMass: false
-        showPpcom: false
-        showZmp: false
+        show_cm: false
+        show_cm_projection: false
+        show_zmp: false
       - 
         bodyItem: 21
-        showCenterOfMass: false
-        showPpcom: false
-        showZmp: false
+        show_cm: false
+        show_cm_projection: false
+        show_zmp: false
       - 
         bodyItem: 22
-        showCenterOfMass: false
-        showPpcom: false
-        showZmp: false
+        show_cm: false
+        show_cm_projection: false
+        show_zmp: false
       - 
         bodyItem: 23
-        showCenterOfMass: false
-        showPpcom: false
-        showZmp: false
+        show_cm: false
+        show_cm_projection: false
+        show_zmp: false
       - 
         bodyItem: 24
-        showCenterOfMass: false
-        showPpcom: false
-        showZmp: false
+        show_cm: false
+        show_cm_projection: false
+        show_zmp: false
       - 
         bodyItem: 25
-        showCenterOfMass: false
-        showPpcom: false
-        showZmp: false
+        show_cm: false
+        show_cm_projection: false
+        show_zmp: false
       - 
         bodyItem: 26
-        showCenterOfMass: false
-        showPpcom: false
-        showZmp: false
+        show_cm: false
+        show_cm_projection: false
+        show_zmp: false
       - 
         bodyItem: 27
-        showCenterOfMass: false
-        showPpcom: false
-        showZmp: false
+        show_cm: false
+        show_cm_projection: false
+        show_zmp: false
       - 
         bodyItem: 28
-        showCenterOfMass: false
-        showPpcom: false
-        showZmp: false
+        show_cm: false
+        show_cm_projection: false
+        show_zmp: false
       - 
         bodyItem: 29
-        showCenterOfMass: false
-        showPpcom: false
-        showZmp: false
+        show_cm: false
+        show_cm_projection: false
+        show_zmp: false
       - 
         bodyItem: 30
-        showCenterOfMass: false
-        showPpcom: false
-        showZmp: false
+        show_cm: false
+        show_cm_projection: false
+        show_zmp: false
       - 
         bodyItem: 31
-        showCenterOfMass: false
-        showPpcom: false
-        showZmp: false
+        show_cm: false
+        show_cm_projection: false
+        show_zmp: false
       - 
         bodyItem: 32
-        showCenterOfMass: false
-        showPpcom: false
-        showZmp: false
+        show_cm: false
+        show_cm_projection: false
+        show_zmp: false
       - 
         bodyItem: 33
-        showCenterOfMass: false
-        showPpcom: false
-        showZmp: false
+        show_cm: false
+        show_cm_projection: false
+        show_zmp: false
       - 
         bodyItem: 34
-        showCenterOfMass: false
-        showPpcom: false
-        showZmp: false
+        show_cm: false
+        show_cm_projection: false
+        show_zmp: false
       - 
         bodyItem: 35
-        showCenterOfMass: false
-        showPpcom: false
-        showZmp: false
+        show_cm: false
+        show_cm_projection: false
+        show_zmp: false
       - 
         bodyItem: 36
-        showCenterOfMass: false
-        showPpcom: false
-        showZmp: false
+        show_cm: false
+        show_cm_projection: false
+        show_zmp: false
       - 
-        bodyItem: 40
-        showCenterOfMass: false
-        showPpcom: false
-        showZmp: false
+        bodyItem: 39
+        show_cm: false
+        show_cm_projection: false
+        show_zmp: false
   "KinematicFaultChecker": 
     checkJointPositions: true
     angleMargin: 0
@@ -1513,9 +1420,6 @@ Body:
     inputFrameRate: 200
     isOutputFrameRateSpecified: false
     outputFrameRate: 200
-Media: 
-  "PulseAudioManager": 
-    keepStreamConnection: false
 viewAreas: 
   - 
     type: embedded
@@ -1523,43 +1427,41 @@ viewAreas:
     contents: 
       type: splitter
       orientation: horizontal
-      sizes: [ 458, 1458 ]
+      sizes: [ 401, 1275 ]
       children: 
         - 
           type: splitter
           orientation: vertical
-          sizes: [ 578, 392 ]
+          sizes: [ 575, 390 ]
           children: 
             - 
               type: pane
               views: [ 1 ]
-              current: 1
             - 
               type: pane
-              views: [ 0, 7 ]
+              views: [ 0, 8 ]
               current: 0
         - 
           type: splitter
           orientation: vertical
-          sizes: [ 704, 266 ]
+          sizes: [ 700, 265 ]
           children: 
             - 
               type: splitter
               orientation: horizontal
-              sizes: [ 659, 795 ]
+              sizes: [ 576, 695 ]
               children: 
                 - 
                   type: pane
-                  views: [ 5, 6, 4 ]
-                  current: 4
+                  views: [ 6, 7, 5 ]
+                  current: 6
                 - 
                   type: pane
-                  views: [ 3 ]
-                  current: 3
+                  views: [ 4 ]
             - 
               type: pane
-              views: [ 2, 8 ]
-              current: 2
+              views: [ 3, 11 ]
+              current: 3
 layoutOfToolBars: 
   rows: 
     - 

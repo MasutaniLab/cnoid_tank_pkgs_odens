@@ -1,4 +1,4 @@
-Tank:
+tank:
   base_controller:
     type        : "diff_drive_controller/DiffDriveController"
     left_wheel  : 'TRACK_L'
